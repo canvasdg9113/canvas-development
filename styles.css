@@ -37,3 +37,15 @@ footer{min-height:165px}
 .tag{font-size:24px;line-height:1.1}
 .tag span{color:#d7c4ac}.tag b{font:400 20px "DM Sans";margin-left:16px}
 @media(max-width:800px){.approach{min-height:0}.approach-photo{min-height:400px}.approach-panel{padding:60px 7vw!important}.principles{grid-template-columns:1fr}.principles span+span{border-left:0;border-top:1px solid #c9c5bb;padding-left:0}.available .tile .photo{min-height:350px}.richmond h2{font-size:48px}}
+
+/* Richmond by Design — approved Richmond skyline artwork */
+.city-photo{
+  background-image:url('richmond-by-design.png');
+  background-size:200% auto;
+  background-position:right center;
+  background-repeat:no-repeat;
+  filter:none;
+}
+@media(max-width:800px){
+  .city-photo{background-size:auto 100%;background-position:78% center}
+}
