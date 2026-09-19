@@ -49,3 +49,19 @@ footer{min-height:165px}
 @media(max-width:800px){
   .city-photo{background-size:auto 100%;background-position:78% center}
 }
+
+/* Subtle motion system */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
+.reveal.in-view{opacity:1;transform:none}
+.hero-photo{animation:heroReveal 1.25s ease both}
+.hero-copy>*{opacity:0;transform:translateY(18px);animation:copyReveal .75s ease forwards}
+.hero-copy>*:nth-child(1){animation-delay:.15s}.hero-copy>*:nth-child(2){animation-delay:.28s}.hero-copy>*:nth-child(3){animation-delay:.42s}.hero-copy>*:nth-child(4){animation-delay:.55s}
+@keyframes heroReveal{from{opacity:.45;transform:scale(1.035)}to{opacity:1;transform:scale(1)}}
+@keyframes copyReveal{to{opacity:1;transform:none}}
+.projects article .photo,.tile .photo,.approach-photo,.city-photo{transition:transform .7s cubic-bezier(.2,.7,.2,1),filter .5s ease}
+.projects article:hover .photo,.tile:hover .photo{transform:scale(1.025)}
+.rust-btn,.text-link{transition:transform .25s ease,opacity .25s ease}
+.rust-btn:hover,.text-link:hover{transform:translateX(4px)}
+.brand-mark:before{transition:transform .6s ease}
+.brand-lockup:hover .brand-mark:before{transform:rotate(18deg)}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal,.hero-photo,.hero-copy>*,.projects article .photo,.tile .photo,.approach-photo,.city-photo,.rust-btn,.text-link,.brand-mark:before{animation:none!important;transition:none!important;transform:none!important;opacity:1!important}}
