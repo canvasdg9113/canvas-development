@@ -65,3 +65,25 @@ footer{min-height:165px}
 .brand-mark:before{transition:transform .6s ease}
 .brand-lockup:hover .brand-mark:before{transform:rotate(18deg)}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal,.hero-photo,.hero-copy>*,.projects article .photo,.tile .photo,.approach-photo,.city-photo,.rust-btn,.text-link,.brand-mark:before{animation:none!important;transition:none!important;transform:none!important;opacity:1!important}}
+
+/* Expanded cinematic motion */
+.photo{overflow:hidden;will-change:background-position,transform}
+.hero-photo{animation:heroReveal 1.25s ease both,heroDrift 18s ease-in-out 1.3s infinite alternate}
+@keyframes heroDrift{from{background-position:48% center}to{background-position:54% center}}
+.eyebrow{position:relative;width:max-content}
+.reveal.in-view .eyebrow:after,.hero-copy .eyebrow:after{content:"";position:absolute;left:0;bottom:-8px;height:1px;background:var(--rust);animation:lineDraw 1s .35s ease both}
+@keyframes lineDraw{from{width:0}to{width:34px}}
+.projects article:nth-child(2){transition-delay:.08s}.projects article:nth-child(3){transition-delay:.16s}.projects article:nth-child(4){transition-delay:.24s}
+.principles span{opacity:0;transform:translateY(12px);transition:.55s ease}
+.approach-panel.in-view .principles span{opacity:1;transform:none}
+.approach-panel.in-view .principles span:nth-child(2){transition-delay:.14s}.approach-panel.in-view .principles span:nth-child(3){transition-delay:.28s}
+.city-photo{transition:background-position 1.1s cubic-bezier(.2,.7,.2,1)}
+.richmond:hover .city-photo{background-position:94% center}
+.tile{position:relative;overflow:hidden}
+.tile:after{content:"→";position:absolute;right:18px;bottom:1px;opacity:0;transform:translateX(-12px);transition:.35s ease;color:var(--rust)}
+.tile:hover:after{opacity:1;transform:none}
+header{transition:box-shadow .35s ease,background .35s ease;position:relative;z-index:20}
+header.scrolled{position:sticky;top:0;box-shadow:0 8px 28px rgba(30,30,25,.08);background:rgba(248,246,240,.96);backdrop-filter:blur(12px)}
+.scroll-progress{position:fixed;top:0;left:0;height:2px;width:0;background:var(--rust);z-index:100;pointer-events:none}
+@media(min-width:801px){.project-intro.reveal{transform:translateX(-24px)}.project-intro.reveal.in-view{transform:none}.approach-panel.reveal,.richmond>div:last-child.reveal{transform:translateX(28px)}.approach-panel.reveal.in-view,.richmond>div:last-child.reveal.in-view{transform:none}}
+@media(prefers-reduced-motion:reduce){.scroll-progress{display:none}.hero-photo{animation:none!important}.principles span{opacity:1!important;transform:none!important}.eyebrow:after{animation:none!important}}
