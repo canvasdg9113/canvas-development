@@ -14,3 +14,26 @@
 .foot .brand-mark i,.foot .brand-mark b,.foot .brand-mark u{background:#e8e1d4}
 .foot .brand-words{color:#f4f0e8}
 @media(max-width:800px){.brand-lockup{gap:9px}.brand-mark{width:31px;height:31px;transform:scale(.82);transform-origin:left center}.brand-words{font-size:19px}}
+
+/* Lower-page composition */
+.approach{min-height:520px}
+.approach-photo{min-height:520px;background-position:center 58%}
+.approach-panel{padding:76px 7vw 64px 5.5vw!important}
+.approach-panel h2{max-width:560px}
+.approach-panel>p:not(.eyebrow){max-width:560px}
+.principles{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin:30px 0 5px;border-top:1px solid #c9c5bb;border-bottom:1px solid #c9c5bb}
+.principles span{padding:16px 12px 16px 0;font-size:8px;letter-spacing:.15em;color:#777}
+.principles span+span{padding-left:18px;border-left:1px solid #c9c5bb}
+.principles b{display:block;margin-top:6px;font:400 18px "Libre Caslon Display",serif;letter-spacing:0;color:var(--ink)}
+.available{align-items:center}
+.available h2{max-width:440px}
+.available .tile{align-self:stretch;display:flex;flex-direction:column}
+.available .tile .photo{flex:1;min-height:280px}
+.richmond{min-height:430px}
+.city-photo{background-position:center}
+.richmond>div:last-child{padding-left:7vw;padding-right:7vw}
+.richmond h2{font-size:56px}
+footer{min-height:165px}
+.tag{font-size:24px;line-height:1.1}
+.tag span{color:#d7c4ac}.tag b{font:400 20px "DM Sans";margin-left:16px}
+@media(max-width:800px){.approach{min-height:0}.approach-photo{min-height:400px}.approach-panel{padding:60px 7vw!important}.principles{grid-template-columns:1fr}.principles span+span{border-left:0;border-top:1px solid #c9c5bb;padding-left:0}.available .tile .photo{min-height:350px}.richmond h2{font-size:48px}}
