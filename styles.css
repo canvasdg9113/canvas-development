@@ -162,3 +162,9 @@ footer{background:#1f211f}
  .hero-photo{background-image:linear-gradient(180deg,rgba(15,17,14,.05) 20%,rgba(15,17,14,.82) 76%,rgba(15,17,14,.92) 100%),url('canvas-hero-final.png')!important;background-position:66% center!important}
  .hero-overlay{width:auto!important}
 }
+
+/* Hero image only — remove all overlaid copy/buttons */
+.hero{display:block!important;background:var(--charcoal)!important;padding:24px 5.5vw 34px!important}
+.hero-photo{background-image:url('canvas-hero-final.png')!important;background-size:cover!important;background-position:center!important;min-height:680px!important;width:100%!important;box-shadow:0 20px 48px rgba(12,13,11,.28)}
+.hero-photo:before,.hero-photo:after,.hero-overlay{display:none!important}
+@media(max-width:800px){.hero{padding:14px!important}.hero-photo{min-height:520px!important;background-image:url('canvas-hero-final.png')!important;background-position:62% center!important}}
