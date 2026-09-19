@@ -124,3 +124,22 @@ footer{background:#1f211f}
  .hero-photo{min-height:420px}
  .hero-copy{margin:0;padding:55px 7vw 65px;background:var(--green)}
 }
+
+/* Full-bleed editorial hero — reference treatment */
+.hero{display:block!important;background:var(--charcoal);padding:24px 5.5vw 34px!important;min-height:0!important}
+.hero-photo{min-height:680px!important;width:100%;position:relative;overflow:hidden;background-image:linear-gradient(90deg,rgba(17,19,16,.72) 0%,rgba(17,19,16,.46) 32%,rgba(17,19,16,.10) 62%,rgba(17,19,16,.02) 100%),url('hero-richmond-infill.jpg')!important;background-size:cover!important;background-position:center!important;box-shadow:0 20px 48px rgba(12,13,11,.28)}
+.hero-photo:after{content:"";position:absolute;inset:0;border:1px solid rgba(255,255,255,.08);pointer-events:none}
+.hero-overlay{position:absolute;z-index:2;left:5%;top:50%;transform:translateY(-50%);width:min(520px,45%);color:#fff}
+.hero-overlay .eyebrow{color:#e4ded2;margin:0 0 22px}
+.hero-overlay h1{font:400 clamp(54px,5vw,78px)/.92 "Libre Caslon Display",serif;margin:0 0 28px;letter-spacing:-.02em}
+.hero-overlay h1 em{font-style:normal;color:#fff}
+.hero-overlay>p:not(.eyebrow){max-width:470px;font-size:14px;line-height:1.65;color:#f3efe7;text-shadow:0 1px 12px rgba(0,0,0,.25)}
+.hero-actions{display:flex;gap:14px;margin-top:30px}
+.hero-btn{min-width:180px;padding:17px 20px;border:1px solid rgba(255,255,255,.78);font-size:9px;letter-spacing:.08em;display:flex;justify-content:space-between;align-items:center;transition:background .3s ease,color .3s ease,transform .3s ease}
+.hero-btn.primary{background:#f5f2ea;color:var(--ink);border-color:#f5f2ea}
+.hero-btn.secondary{color:#fff;background:rgba(24,27,23,.18);backdrop-filter:blur(3px)}
+.hero-btn:hover{transform:translateY(-3px)}
+.hero-btn.secondary:hover{background:#f5f2ea;color:var(--ink)}
+.hero-overlay>*{opacity:0;transform:translateY(18px);animation:copyReveal .75s ease forwards}
+.hero-overlay>*:nth-child(1){animation-delay:.18s}.hero-overlay>*:nth-child(2){animation-delay:.3s}.hero-overlay>*:nth-child(3){animation-delay:.44s}.hero-overlay>*:nth-child(4){animation-delay:.58s}
+@media(max-width:800px){.hero{padding:14px!important}.hero-photo{min-height:680px!important;background-position:60% center!important}.hero-overlay{left:7%;right:7%;width:auto;top:auto;bottom:52px;transform:none}.hero-overlay h1{font-size:50px}.hero-overlay>p:not(.eyebrow){font-size:13px;max-width:90%}.hero-actions{flex-direction:column;align-items:flex-start}.hero-btn{width:230px}.hero-overlay .eyebrow{margin-bottom:16px}}
