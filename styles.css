@@ -295,3 +295,34 @@ header .brand-words small{
  .approach-closing{padding:65px 7vw;display:block}
  .approach-cta{margin-top:35px;width:260px}
 }
+
+
+/* Private residences password landing page */
+.rent-gate-page{background:var(--charcoal)}
+.rent-gate{display:grid;grid-template-columns:56% 44%;min-height:720px;background:var(--charcoal)}
+.rent-gate-image{position:relative;background-image:linear-gradient(180deg,rgba(20,22,19,.04),rgba(20,22,19,.38)),url('residences-for-rent.png');background-size:cover;background-position:center;min-height:720px}
+.rent-gate-caption{position:absolute;left:6vw;bottom:48px;color:#fff;font-size:8px;letter-spacing:.22em}
+.rent-gate-caption p{font:italic 16px "Libre Caslon Display",serif;letter-spacing:0;margin:8px 0 0}
+.rent-gate-panel{background:var(--green);color:#f6f2e9;display:flex;align-items:center}
+.rent-gate-inner{width:min(560px,78%);margin:0 auto;padding:75px 0}
+.rent-gate-inner .eyebrow{color:#ddd7ca}
+.rent-gate h1{font:400 clamp(62px,5.2vw,84px)/.93 "Libre Caslon Display",serif;letter-spacing:-.025em;margin:28px 0 30px}
+.rent-intro{font-size:14px;line-height:1.75;max-width:480px;color:#eee8dd}
+.gate-rule{width:100%;height:1px;background:rgba(255,255,255,.25);margin:38px 0}
+.gate-note{font-size:12px;line-height:1.7;max-width:450px;color:#e4ded2}
+.password-form{margin-top:28px}
+.password-form label{display:block;font-size:8px;letter-spacing:.2em;margin-bottom:11px;color:#ddd7ca}
+.password-row{display:flex;border-bottom:1px solid rgba(255,255,255,.72)}
+.password-row input{flex:1;min-width:0;border:0;background:transparent;color:#fff;font:400 17px "DM Sans",sans-serif;padding:14px 4px;outline:0}
+.password-row input::placeholder{color:rgba(255,255,255,.45)}
+.password-row button{border:0;background:transparent;color:#fff;font-size:9px;letter-spacing:.16em;padding:0 4px 0 22px;cursor:pointer}
+.password-row button span{color:#c76f4f;font-size:16px;margin-left:10px}
+.password-status{min-height:20px;font-size:10px;letter-spacing:.04em;color:#e0b09c;margin-top:12px}
+.gate-back{display:inline-block;margin-top:30px;font-size:8px;letter-spacing:.16em;color:#ddd7ca}
+@media(max-width:800px){
+ .rent-gate{grid-template-columns:1fr;min-height:0}
+ .rent-gate-image{min-height:390px}
+ .rent-gate-caption{left:7vw;bottom:28px}
+ .rent-gate-inner{width:86%;padding:65px 0 75px}
+ .rent-gate h1{font-size:56px}
+}
