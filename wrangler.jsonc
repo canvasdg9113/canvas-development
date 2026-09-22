@@ -1,16 +1,11 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "canvas-development",
-  "main": "worker.js",
+  "main": "./worker.js",
   "compatibility_date": "2026-09-22",
   "assets": {
-    "directory": ".",
+    "directory": "./",
     "binding": "ASSETS",
-    "run_worker_first": [
-      "/api/*",
-      "/private-residences",
-      "/private-residences.html",
-      "/residences/*"
-    ]
+    "run_worker_first": true
   }
 }
