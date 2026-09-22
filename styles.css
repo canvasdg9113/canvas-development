@@ -192,3 +192,25 @@ footer{background:#1f211f}
  .hero-actions{flex-direction:column!important;gap:10px!important}
  .hero-btn{width:245px!important;min-width:0!important}
 }
+
+
+/* Header logo — white horizontal Canvas lockup */
+header .brand-lockup{gap:18px;align-items:center}
+header .brand-mark{width:58px;height:58px}
+header .brand-mark:before{inset:4px 7px 4px 3px;border:1.6px solid #fff;border-right-color:transparent}
+header .brand-mark i,header .brand-mark b,header .brand-mark u{background:#fff}
+header .brand-mark i{width:1.5px;height:54px;left:34px;top:1px}
+header .brand-mark b{height:1.5px;width:37px;left:10px;top:17px}
+header .brand-mark u{height:1.5px;width:47px;left:6px;top:44px}
+header .brand-words{font-size:32px;letter-spacing:.16em;color:#fff}
+header .brand-words small{font-size:8px;letter-spacing:.48em;color:#fff;margin-top:7px}
+@media(max-width:800px){
+ header .brand-lockup{gap:10px}
+ header .brand-mark{width:40px;height:40px;transform:none}
+ header .brand-mark:before{inset:3px 5px 3px 2px}
+ header .brand-mark i{height:38px;left:24px}
+ header .brand-mark b{width:27px;left:7px;top:12px}
+ header .brand-mark u{width:34px;left:4px;top:31px}
+ header .brand-words{font-size:23px}
+ header .brand-words small{font-size:6px}
+}
