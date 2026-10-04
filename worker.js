@@ -61,6 +61,30 @@ export default {
       });
     }
 
+    if (url.pathname === "/api/contact") {
+      if (request.method !== "POST") return new Response("Method Not Allowed", { status: 405 });
+      if (!env.EMAIL) return new Response("Email service is not configured.", { status: 503 });
+      let body;
+      try { body = await request.json(); } catch { return new Response("Bad Request", { status: 400 }); }
+      const name = String(body.name || "").trim().slice(0, 120);
+      const email = String(body.email || "").trim().slice(0, 200);
+      const interest = String(body.interest || "General Inquiry").trim().slice(0, 120);
+      const message = String(body.message || "").trim().slice(0, 5000);
+      if (!name || !email || !message || !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) return new Response("Bad Request", { status: 400 });
+      try {
+        await env.EMAIL.send({
+          to: "info@canvasdg.com",
+          from: "website@canvasdg.com",
+          replyTo: email,
+          subject: "Canvas website inquiry — " + interest,
+          text: "Name: " + name + "\nEmail: " + email + "\nInquiry: " + interest + "\n\n" + message
+        });
+        return Response.json({ ok: true });
+      } catch (e) {
+        return new Response("Unable to send message.", { status: 500 });
+      }
+    }
+
     const protectedRoute =
       url.pathname === "/private-residences.html" ||
       url.pathname === "/private-residences" ||
