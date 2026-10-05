@@ -411,3 +411,13 @@ header .brand-words small{
 
 /* In Development project cards */
 .development-project{grid-template-columns:1.15fr .85fr;padding:0;gap:0;min-height:650px}.development-project-image{min-height:650px;background-size:cover;background-position:center}.development-project-copy{padding:90px 7vw;display:flex;flex-direction:column;justify-content:center}.development-project-copy>p:not(.eyebrow){font-size:13px;line-height:1.9;color:#e1ddd3;max-width:520px}.development-meta{display:flex;gap:45px;margin-top:40px;padding-top:28px;border-top:1px solid rgba(246,241,231,.3)}.development-meta span{font-size:7px;letter-spacing:.14em}.development-meta b{display:block;font:400 28px/1 "Libre Caslon Display",serif;letter-spacing:0;margin-bottom:8px}@media(max-width:800px){.development-project{grid-template-columns:1fr}.development-project-image{min-height:430px}.development-project-copy{padding:65px 7vw}.development-meta{gap:25px}}
+
+/* Editorial photo banners — Projects + In Development */
+.projects-banner,.development-banner{position:relative;isolation:isolate;overflow:hidden;min-height:520px;display:flex;flex-direction:column;justify-content:center;background:var(--paper)}
+.projects-banner:before,.development-banner:before{content:"";position:absolute;inset:0;z-index:-2;background-size:cover;background-position:center}
+.projects-banner:before{background-image:url('richmond-by-design.png');background-position:center 52%}
+.development-banner:before{background-image:url('approach-canvas.jpg');background-position:center 48%}
+.projects-banner:after,.development-banner:after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(245,242,234,.94) 0%,rgba(245,242,234,.83) 43%,rgba(245,242,234,.48) 72%,rgba(245,242,234,.28) 100%)}
+.projects-banner h1,.projects-banner>p,.development-banner h1,.development-banner>p{position:relative;max-width:690px}
+.development-hero.development-banner{background:var(--paper);color:var(--ink)}
+@media(max-width:800px){.projects-banner,.development-banner{min-height:460px}.projects-banner:after,.development-banner:after{background:rgba(245,242,234,.78)}}
