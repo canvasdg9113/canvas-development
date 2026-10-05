@@ -421,3 +421,6 @@ header .brand-words small{
 .projects-banner h1,.projects-banner>p,.development-banner h1,.development-banner>p{position:relative;max-width:690px}
 .development-hero.development-banner{background:var(--paper);color:var(--ink)}
 @media(max-width:800px){.projects-banner,.development-banner{min-height:460px}.projects-banner:after,.development-banner:after{background:rgba(245,242,234,.78)}}
+
+/* Approach top photo banner */
+.approach-top-banner{position:relative;isolation:isolate;min-height:390px;padding:70px 7vw;display:flex;align-items:flex-end;overflow:hidden;color:var(--ink)}.approach-top-banner:before{content:"";position:absolute;inset:0;z-index:-2;background:url('approach-canvas.jpg') center 52%/cover no-repeat}.approach-top-banner:after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(245,242,234,.9),rgba(245,242,234,.58) 55%,rgba(245,242,234,.25))}.approach-top-banner h1{font:400 clamp(48px,6vw,82px)/.96 "Libre Caslon Display",serif;margin:16px 0 0}.approach-top-banner>div{max-width:760px}@media(max-width:800px){.approach-top-banner{min-height:330px}.approach-top-banner:after{background:rgba(245,242,234,.7)}}
