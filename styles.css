@@ -450,3 +450,9 @@ body.projects-page main>.projects-page-hero.projects-banner>p:last-child{positio
 .projects-clean-copy h1{margin:0 0 26px;font:400 clamp(70px,8vw,122px)/.86 "Libre Caslon Display",serif;letter-spacing:-.04em;color:#292a27}
 .projects-clean-copy>p:last-child{margin:0;max-width:590px;font:400 13px/1.9 "DM Sans",sans-serif;color:#68665f}
 @media(max-width:800px){.projects-clean-hero{height:440px}.projects-clean-shade{background:rgba(245,242,234,.84)}.projects-clean-copy{left:7vw;width:86vw}.projects-clean-copy h1{font-size:clamp(48px,14vw,64px)}}
+
+/* Projects hero — restore Canvas green */
+.projects-clean-shade{background:linear-gradient(90deg,rgba(83,96,71,.97) 0%,rgba(83,96,71,.91) 38%,rgba(83,96,71,.66) 62%,rgba(83,96,71,.20) 100%)}
+.projects-clean-copy,.projects-clean-copy h1,.projects-clean-kicker{color:#f6f1e7}
+.projects-clean-copy>p:last-child{color:#e6e1d7}
+@media(max-width:800px){.projects-clean-shade{background:rgba(83,96,71,.84)}}
