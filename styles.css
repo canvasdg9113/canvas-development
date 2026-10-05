@@ -466,3 +466,11 @@ body.projects-page main>.projects-page-hero.projects-banner>p:last-child{positio
 .development-clean-copy h1{margin:0 0 26px;font:400 clamp(70px,8vw,122px)/.86 "Libre Caslon Display",serif;letter-spacing:-.04em;color:#f6f1e7}
 .development-clean-copy>p:last-child{margin:0;max-width:590px;font:400 13px/1.9 "DM Sans",sans-serif;color:#e6e1d7}
 @media(max-width:800px){.development-clean-hero{height:440px}.development-clean-shade{background:rgba(83,96,71,.84)}.development-clean-copy{left:7vw;width:86vw}.development-clean-copy h1{font-size:clamp(48px,14vw,64px)}}
+
+/* In Development — restored pre-banner hero */
+body.development-page main>.development-hero{position:relative!important;isolation:auto!important;overflow:visible!important;min-height:auto!important;background:linear-gradient(135deg,var(--charcoal) 0%,#383b34 58%,var(--green) 100%)!important;color:#f6f1e7!important;padding:170px 7vw 105px!important;display:block!important}
+body.development-page main>.development-hero::before,body.development-page main>.development-hero::after{content:none!important;display:none!important;background:none!important}
+body.development-page main>.development-hero .eyebrow{color:#f6f1e7!important;margin:0!important}
+body.development-page main>.development-hero h1{font:400 clamp(70px,8vw,122px)/.86 "Libre Caslon Display",serif!important;letter-spacing:-.04em!important;margin:28px 0!important;color:#f6f1e7!important;max-width:none!important}
+body.development-page main>.development-hero>p:last-child{max-width:620px!important;color:#cbc7be!important;font-size:13px!important;line-height:1.9!important;margin:0!important}
+@media(max-width:800px){body.development-page main>.development-hero{padding:125px 7vw 70px!important}body.development-page main>.development-hero h1{font-size:64px!important}}
