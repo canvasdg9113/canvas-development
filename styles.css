@@ -480,3 +480,12 @@ body.development-page main>.development-hero>p:last-child{max-width:620px!import
 .projects-clean-bg{background-image:none!important;background:#536047!important;opacity:1!important}
 .projects-clean-shade{background:#536047!important;opacity:1!important}
 .projects-clean-copy{z-index:3!important}
+
+/* In Development — combined opening statement */
+body.development-page main>.development-hero.development-combined{display:grid!important;grid-template-columns:1fr 1fr!important;gap:9vw!important;align-items:end!important;padding:135px 7vw 100px!important}
+.development-combined-title h1{margin:25px 0 0!important}
+.development-combined-copy{padding:0 0 5px;border-left:1px solid rgba(246,241,231,.25);padding-left:5vw}
+.development-combined-copy h2{font:400 clamp(42px,4.4vw,68px)/.96 "Libre Caslon Display",serif;margin:20px 0 25px;color:#f6f1e7}
+.development-combined-copy>p:not(.eyebrow){max-width:560px;font-size:13px;line-height:1.9;color:#cbc7be;margin:0}
+.development-combined-copy a{display:inline-block;margin-top:30px;color:#d58a68;font-size:9px;letter-spacing:.14em;border-bottom:1px solid #d58a68;padding-bottom:8px}
+@media(max-width:800px){body.development-page main>.development-hero.development-combined{grid-template-columns:1fr!important;gap:45px!important;padding:100px 7vw 70px!important}.development-combined-copy{border-left:0;border-top:1px solid rgba(246,241,231,.25);padding:35px 0 0}.development-combined-copy h2{font-size:46px}}
