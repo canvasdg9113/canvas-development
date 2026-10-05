@@ -474,3 +474,9 @@ body.development-page main>.development-hero .eyebrow{color:#f6f1e7!important;ma
 body.development-page main>.development-hero h1{font:400 clamp(70px,8vw,122px)/.86 "Libre Caslon Display",serif!important;letter-spacing:-.04em!important;margin:28px 0!important;color:#f6f1e7!important;max-width:none!important}
 body.development-page main>.development-hero>p:last-child{max-width:620px!important;color:#cbc7be!important;font-size:13px!important;line-height:1.9!important;margin:0!important}
 @media(max-width:800px){body.development-page main>.development-hero{padding:125px 7vw 70px!important}body.development-page main>.development-hero h1{font-size:64px!important}}
+
+/* Projects hero final: opaque green panel prevents any background-art text showing through */
+.projects-clean-hero{background:#536047!important}
+.projects-clean-bg{background-image:none!important;background:#536047!important;opacity:1!important}
+.projects-clean-shade{background:#536047!important;opacity:1!important}
+.projects-clean-copy{z-index:3!important}
