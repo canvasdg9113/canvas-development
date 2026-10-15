@@ -502,3 +502,6 @@ body.development-page main>.development-hero.development-combined{display:grid!i
 .three-points-photo-grid a,.three-points-photo-grid a:nth-child(1),.three-points-photo-grid a:nth-child(8){grid-column:auto!important;aspect-ratio:4/3!important;max-height:250px!important}
 .three-points-photo-grid img{object-fit:cover!important}
 @media(max-width:800px){.three-points-gallery{padding:55px 5vw!important}.three-points-photo-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:8px!important}.three-points-photo-grid a,.three-points-photo-grid a:nth-child(1),.three-points-photo-grid a:nth-child(8){max-height:180px!important}}
+
+/* Mobile navigation: make MENU toggle visible and usable site-wide */
+@media(max-width:800px){header{position:relative;z-index:1000}header .menu{display:block;position:relative;z-index:1002;cursor:pointer;padding:12px;border:0;background:transparent;color:#f5f1e8}header nav{display:none!important}header nav.open{display:flex!important;position:absolute;top:100%;left:0;right:0;margin:0;padding:24px 7vw 30px;background:#30312e;color:#f5f1e8;flex-direction:column;align-items:stretch;gap:0;box-shadow:0 15px 24px rgba(0,0,0,.18);z-index:1001}header nav.open a{display:block;padding:14px 0;font-size:12px;border-bottom:1px solid rgba(255,255,255,.15)}}
